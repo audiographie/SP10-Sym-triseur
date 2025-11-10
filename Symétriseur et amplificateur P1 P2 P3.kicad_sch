@@ -1118,6 +1118,14 @@
     (effects (font (size 1.524 1.524)) (justify left bottom))
     (uuid 405afa4d-b203-4e31-8b1d-4bc818634e8c)
   )
+  (label "VSS" (at 200.66 54.61 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 41191e2e-dc0a-4926-ada5-1598e2c57b71)
+  )
+  (label "VCC" (at 200.66 39.37 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 5390a6ea-cc87-45ef-a8cc-5d588b9567eb)
+  )
   (label "VSS" (at 124.46 154.94 0) (fields_autoplaced)
     (effects (font (size 1.524 1.524)) (justify left bottom))
     (uuid 689a8c90-0293-4412-91f6-3171499bba17)
@@ -1157,6 +1165,10 @@
   (label "P1" (at 51.181 38.1 0) (fields_autoplaced)
     (effects (font (size 1.524 1.524)) (justify left bottom))
     (uuid e9808ad2-9bd9-485d-9cd8-dc54a0dae1b4)
+  )
+  (label "GND" (at 200.66 46.99 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid ed195e50-2aa6-4cdc-ada6-c3d6850738e2)
   )
   (label "VCC" (at 128.905 84.455 0) (fields_autoplaced)
     (effects (font (size 1.524 1.524)) (justify left bottom))
@@ -1377,6 +1389,36 @@
       (project "Symétriseur et amplificateur P1 P2 P3"
         (path "/7d9ed54d-3fc1-4a66-a75d-5cfb3bd66c6d"
           (reference "R25") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "carte_num-rescue:CONN_01X01") (at 195.58 54.61 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 16d71d1e-7e93-4a66-826b-b3ae00a28ad8)
+    (property "Reference" "P8" (at 195.58 57.15 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "P1" (at 195.58 52.705 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Loop_D3.80mm_Drill2.5mm" (at 195.58 54.61 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 195.58 54.61 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (pin "1" (uuid 57ead6e1-5107-4d13-be4c-613e84ce2693))
+    (instances
+      (project "Kaneda-SP10"
+        (path "/7a82d427-fea7-4249-9c5a-59087a103697"
+          (reference "P8") (unit 1)
+        )
+      )
+      (project "Symétriseur et amplificateur P1 P2 P3"
+        (path "/7d9ed54d-3fc1-4a66-a75d-5cfb3bd66c6d"
+          (reference "P19") (unit 1)
         )
       )
     )
@@ -2306,6 +2348,36 @@
     )
   )
 
+  (symbol (lib_id "carte_num-rescue:CONN_01X01") (at 195.58 46.99 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 77876f69-b483-4f31-9b29-ca28134e3f56)
+    (property "Reference" "P8" (at 195.58 49.53 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "P1" (at 195.58 45.085 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Loop_D3.80mm_Drill2.5mm" (at 195.58 46.99 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 195.58 46.99 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (pin "1" (uuid 9bccbc19-5ae3-4bab-b515-d7c8ee3a6b2f))
+    (instances
+      (project "Kaneda-SP10"
+        (path "/7a82d427-fea7-4249-9c5a-59087a103697"
+          (reference "P8") (unit 1)
+        )
+      )
+      (project "Symétriseur et amplificateur P1 P2 P3"
+        (path "/7d9ed54d-3fc1-4a66-a75d-5cfb3bd66c6d"
+          (reference "P18") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "carte_num-rescue:C") (at 64.135 71.12 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7b2e11b5-fbe9-48b7-8793-25946f201c3c)
@@ -2396,6 +2468,36 @@
       (project "Symétriseur et amplificateur P1 P2 P3"
         (path "/7d9ed54d-3fc1-4a66-a75d-5cfb3bd66c6d"
           (reference "Q9") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "carte_num-rescue:CONN_01X01") (at 195.58 39.37 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 8fb5c7f5-2662-4b3f-be5a-d7d426d59e1c)
+    (property "Reference" "P8" (at 195.58 41.91 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "P1" (at 195.58 37.465 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Loop_D3.80mm_Drill2.5mm" (at 195.58 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 195.58 39.37 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (pin "1" (uuid ea9d4ea2-04bc-4662-86d2-7bdc1a649bdc))
+    (instances
+      (project "Kaneda-SP10"
+        (path "/7a82d427-fea7-4249-9c5a-59087a103697"
+          (reference "P8") (unit 1)
+        )
+      )
+      (project "Symétriseur et amplificateur P1 P2 P3"
+        (path "/7d9ed54d-3fc1-4a66-a75d-5cfb3bd66c6d"
+          (reference "P17") (unit 1)
         )
       )
     )
